@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Tutorials — MushBloom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #F5F0E6; color: #2C1810; line-height: 1.7; }
+        .header { background: #2F1B12; padding: 24px; text-align: center; }
+        .header a { color: #DAA520; text-decoration: none; font-weight: 700; font-size: 1.1rem; }
+        .container { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
+        h1 { font-size: 2rem; font-weight: 800; color: #6B3410; margin-bottom: 8px; }
+        .intro { color: #6B5B4F; font-size: 1.05rem; margin-bottom: 40px; }
+        h2 { font-size: 1.4rem; font-weight: 700; color: #8B4513; margin-top: 40px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid rgba(139,69,19,0.15); }
+        h3 { font-size: 1.05rem; font-weight: 600; color: #6B3410; margin-top: 24px; margin-bottom: 8px; }
+        p, li { font-size: 0.95rem; color: #6B5B4F; margin-bottom: 10px; }
+        ul, ol { padding-left: 24px; margin-bottom: 16px; }
+        li { margin-bottom: 6px; }
+        .tip { background: white; border-left: 4px solid #DAA520; padding: 16px 20px; border-radius: 0 12px 12px 0; margin: 16px 0; }
+        .tip strong { color: #8B4513; }
+        .steps { background: white; border-radius: 12px; padding: 20px 24px; margin: 16px 0; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+        .steps ol { margin-bottom: 0; }
+        .steps li { padding: 4px 0; }
+        code { background: rgba(139,69,19,0.08); padding: 2px 8px; border-radius: 4px; font-size: 0.9rem; color: #8B4513; }
+        .faq { margin-top: 16px; }
+        .faq details { background: white; border-radius: 12px; padding: 16px 20px; margin-bottom: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .faq summary { font-weight: 600; color: #2C1810; cursor: pointer; font-size: 0.95rem; }
+        .faq details[open] summary { color: #8B4513; margin-bottom: 8px; }
+        .faq p { margin-bottom: 0; }
+        .contact-box { background: #2F1B12; color: white; padding: 32px; border-radius: 16px; text-align: center; margin-top: 48px; }
+        .contact-box h2 { color: white; border: none; margin-top: 0; }
+        .contact-box p { color: rgba(255,255,255,0.7); }
+        .contact-box a { color: #DAA520; font-weight: 600; }
+        a { color: #8B4513; }
+        .footer { text-align: center; padding: 24px; color: #9B8B7F; font-size: 0.8rem; border-top: 1px solid rgba(139,69,19,0.1); margin-top: 48px; }
+    </style>
+</head>
+<body>
+    <div class="header"><a href="./">🍄 MushBloom</a></div>
+    <div class="container">
+        <h1>Help & Tutorials</h1>
+        <p class="intro">Everything you need to get started and make the most of MushBloom.</p>
+
+        <!-- Getting Started -->
+        <h2>🚀 Getting Started</h2>
+
+        <h3>Creating Your First Grow</h3>
+        <div class="steps">
+            <ol>
+                <li>Open MushBloom and tap the <strong>+</strong> button in the top right</li>
+                <li>Choose <strong>"New Grow"</strong></li>
+                <li>Enter a name for your grow (e.g., "Blue Oyster Batch 1")</li>
+                <li>Select the mushroom strain from the library</li>
+                <li>Choose your substrate type (grain, straw, sawdust, etc.)</li>
+                <li>Set the inoculation date</li>
+                <li>Optionally add a cover photo and notes</li>
+                <li>Tap <strong>Save</strong> — your grow is now being tracked!</li>
+            </ol>
+        </div>
+
+        <h3>Understanding Grow Stages</h3>
+        <p>MushBloom tracks your grow through these stages:</p>
+        <ul>
+            <li><strong>🧫 Inoculation</strong> — Spawn or culture has been added to substrate</li>
+            <li><strong>🌿 Colonization</strong> — Mycelium is spreading through the substrate</li>
+            <li><strong>🍄 Fruiting</strong> — Pins are forming and mushrooms are growing</li>
+            <li><strong>✂️ Harvesting</strong> — Mushrooms are ready to pick</li>
+            <li><strong>✅ Completed</strong> — Grow cycle finished</li>
+            <li><strong>⚠️ Contaminated</strong> — Issue detected</li>
+        </ul>
+        <div class="tip">
+            <strong>💡 Tip:</strong> Tap a grow stage in the progress bar to quickly update it. You can also change stages from the grow's detail view.
+        </div>
+
+        <!-- Tracking -->
+        <h2>📝 Tracking Your Grows</h2>
+
+        <h3>Adding Progress Entries</h3>
+        <p>From a grow's detail view, tap <strong>"Add Entry"</strong> to log progress. Include a photo, description, and date. These entries form your grow timeline — a visual journal of your cultivation journey.</p>
+
+        <h3>Logging Harvests</h3>
+        <div class="steps">
+            <ol>
+                <li>Open your grow's detail page</li>
+                <li>Tap <strong>"Log Harvest"</strong></li>
+                <li>Enter the flush number (1st, 2nd, 3rd, etc.)</li>
+                <li>Enter the weight in grams</li>
+                <li>Add any notes about quality or appearance</li>
+                <li>Tap <strong>Save</strong></li>
+            </ol>
+        </div>
+
+        <!-- Premium Features -->
+        <h2>⭐ Premium Features</h2>
+
+        <h3>Environmental Logging</h3>
+        <p>Track temperature, humidity, CO₂ levels, and light conditions for each grow. Tap the <strong>thermometer icon</strong> in quick actions to open the environment log. Add readings manually and view trend charts to keep your growing environment optimal.</p>
+
+        <h3>AI Contamination Scanner</h3>
+        <p>Tap the <strong>"Scan"</strong> button to open your camera. Point it at your grow to get an AI analysis. The scanner looks for common contamination patterns like green mold (Trichoderma), cobweb mold, black mold, and bacterial blotch.</p>
+        <div class="tip">
+            <strong>⚠️ Important:</strong> The AI scanner is a helpful tool but should not replace expert knowledge. Always consult experienced growers or mycologists for definitive contamination identification.
+        </div>
+
+        <h3>Grow Templates</h3>
+        <p>Save a successful grow's configuration as a template: tap the <strong>⋯ menu</strong> → <strong>"Save as Template"</strong>. Next time you start a grow, choose <strong>"From Template"</strong> to auto-fill all settings.</p>
+
+        <h3>Export Reports</h3>
+        <p>Generate PDF or CSV reports from the <strong>⋯ menu</strong> → <strong>"Export Report"</strong>. PDFs include photos, timeline entries, harvest data, and environmental charts.</p>
+
+        <h3>Smart Reminders</h3>
+        <p>Set reminders for misting, fresh air exchange, checking colonization, or custom tasks. Tap the <strong>bell icon</strong> in quick actions to add a reminder for any grow.</p>
+
+        <!-- Library -->
+        <h2>📚 Using the Library</h2>
+        <p>The Library tab contains:</p>
+        <ul>
+            <li><strong>26+ Mushroom Strains</strong> — Browse by difficulty (Beginner, Intermediate, Advanced). Each strain has detailed growing parameters, substrate recommendations, harvest signs, and medicinal benefits.</li>
+            <li><strong>Growing Guides</strong> — Learn about substrates, environments, harvesting techniques, and advanced methods like agar work and liquid culture.</li>
+            <li><strong>Contamination Guide</strong> — Identify common contaminants and learn prevention strategies.</li>
+            <li><strong>Tips</strong> — Quick, actionable tips for better grows.</li>
+        </ul>
+
+        <!-- FAQ -->
+        <h2>❓ Frequently Asked Questions</h2>
+        <div class="faq">
+            <details>
+                <summary>How many grows can I track for free?</summary>
+                <p>Free users can track up to 2 active grows simultaneously. Upgrade to Premium for unlimited grows.</p>
+            </details>
+            <details>
+                <summary>How does the free trial work?</summary>
+                <p>New subscribers get a 1-week free trial. You can cancel anytime during the trial and won't be charged. After the trial, your chosen plan begins automatically.</p>
+            </details>
+            <details>
+                <summary>Can I switch between monthly and yearly plans?</summary>
+                <p>Yes! Go to your iPhone's Settings → Apple ID → Subscriptions → MushBloom to change or manage your plan.</p>
+            </details>
+            <details>
+                <summary>Is my data backed up?</summary>
+                <p>Data is stored locally on your device. With Premium, you can enable iCloud Sync to back up and access your data across all Apple devices.</p>
+            </details>
+            <details>
+                <summary>Can I transfer my data to a new phone?</summary>
+                <p>If you use iCloud Sync (Premium), your data transfers automatically. Without it, you can transfer data by restoring an iPhone backup on your new device.</p>
+            </details>
+            <details>
+                <summary>What happens if I cancel my subscription?</summary>
+                <p>You keep Premium access until the end of your current billing period. After that, you return to the free tier. Your data is never deleted — you just can't access premium features.</p>
+            </details>
+            <details>
+                <summary>Does the AI scanner work offline?</summary>
+                <p>Yes! The AI contamination scanner processes images entirely on your device. No internet connection is required.</p>
+            </details>
+            <details>
+                <summary>I restored a purchase but Premium isn't showing.</summary>
+                <p>Go to Settings → tap your Premium card → "Restore Purchases". If it still doesn't work, make sure you're signed into the same Apple ID that made the purchase.</p>
+            </details>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact-box">
+            <h2>Still Need Help?</h2>
+            <p>Can't find what you're looking for? We're here to help.</p>
+            <p><a href="mailto:mip@gmx.biz?subject=MushBloom%20Support">📧 mip@gmx.biz</a></p>
+            <p style="font-size: 0.85rem; margin-top: 12px;">We typically respond within 24 hours.</p>
+        </div>
+    </div>
+    <div class="footer">© 2026 MushBloom. Made with 🍄 for mushroom growers everywhere.</div>
+</body>
+</html>

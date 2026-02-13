@@ -1,0 +1,11 @@
+# MushBloom Website
+# GitHub Pages Configuration
+
+title: MushBloom
+description: The ultimate iOS companion app for mushroom cultivators
+url: https://pinkysworld.github.io
+baseurl: /MushBloom
+theme: null
+
+# Serve HTML files without extension
+permalink: pretty
