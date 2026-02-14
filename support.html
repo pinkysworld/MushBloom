@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — MushBloom</title>
+    <meta name="description" content="Get support for MushBloom. Contact us via email for help with mushroom cultivation tracking, app features, and technical issues.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+            background: #F5F0E6; 
+            color: #2C1810; 
+            line-height: 1.7; 
+        }
+        .header { 
+            background: linear-gradient(135deg, #2F1B12 0%, #4A2F1F 100%); 
+            padding: 32px 24px; 
+            text-align: center; 
+            border-bottom: 4px solid #DAA520;
+        }
+        .header a { 
+            color: #DAA520; 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 1.3rem; 
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .header p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+        }
+        .container { 
+            max-width: 720px; 
+            margin: 0 auto; 
+            padding: 48px 24px 80px; 
+        }
+        h1 { 
+            font-size: 2.2rem; 
+            font-weight: 800; 
+            color: #6B3410; 
+            margin-bottom: 12px; 
+            text-align: center;
+        }
+        .intro { 
+            color: #6B5B4F; 
+            font-size: 1.1rem; 
+            margin-bottom: 48px; 
+            text-align: center;
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .support-box {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border: 2px solid #DAA520;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .support-box h2 {
+            font-size: 1.5rem;
+            color: #8B4513;
+            margin-bottom: 16px;
+        }
+        .support-box .email {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #6B3410;
+            margin: 24px 0;
+        }
+        .support-box .email a {
+            color: #8B4513;
+            text-decoration: none;
+            border-bottom: 2px solid #DAA520;
+            padding-bottom: 2px;
+            transition: all 0.2s;
+        }
+        .support-box .email a:hover {
+            color: #DAA520;
+            border-bottom-color: #8B4513;
+        }
+        .support-box .response-time {
+            background: rgba(218, 165, 32, 0.1);
+            border-left: 4px solid #DAA520;
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin-top: 24px;
+            text-align: left;
+        }
+        .support-box .response-time strong {
+            color: #8B4513;
+        }
+
+        h2 { 
+            font-size: 1.4rem; 
+            font-weight: 700; 
+            color: #8B4513; 
+            margin-top: 48px; 
+            margin-bottom: 16px; 
+            padding-bottom: 8px; 
+            border-bottom: 2px solid rgba(139, 69, 19, 0.15); 
+        }
+        h3 { 
+            font-size: 1.05rem; 
+            font-weight: 600; 
+            color: #6B3410; 
+            margin-top: 24px; 
+            margin-bottom: 8px; 
+        }
+        p, li { 
+            font-size: 0.95rem; 
+            color: #6B5B4F; 
+            margin-bottom: 10px; 
+        }
+        ul, ol { 
+            padding-left: 24px; 
+            margin-bottom: 16px; 
+        }
+        li { 
+            margin-bottom: 8px; 
+        }
+        
+        .info-box {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        }
+        .info-box h3 {
+            margin-top: 0;
+            color: #8B4513;
+        }
+        .info-box ul {
+            margin-bottom: 0;
+        }
+
+        .tip { 
+            background: linear-gradient(135deg, rgba(218, 165, 32, 0.08), rgba(139, 69, 19, 0.08));
+            border-left: 4px solid #DAA520; 
+            padding: 16px 20px; 
+            border-radius: 0 12px 12px 0; 
+            margin: 20px 0; 
+        }
+        .tip strong { 
+            color: #8B4513; 
+        }
+
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin: 32px 0;
+        }
+        .quick-link-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #2C1810;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+            border: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        .quick-link-card:hover {
+            border-color: #DAA520;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        .quick-link-card .icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .quick-link-card h3 {
+            margin: 0;
+            font-size: 1rem;
+            color: #8B4513;
+        }
+
+        .footer { 
+            text-align: center; 
+            padding: 32px 24px; 
+            color: #9B8B7F; 
+            font-size: 0.85rem; 
+            border-top: 1px solid rgba(139, 69, 19, 0.1); 
+            margin-top: 48px; 
+        }
+        .footer a {
+            color: #8B4513;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        .footer a:hover {
+            color: #DAA520;
+        }
+
+        a { color: #8B4513; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="./">🍄 MushBloom</a>
+        <p>Support & Help Center</p>
+    </div>
+
+    <div class="container">
+        <h1>We're Here to Help</h1>
+        <p class="intro">Have a question, need technical support, or want to provide feedback? We're committed to helping you get the most out of MushBloom.</p>
+
+        <!-- Main Support Box -->
+        <div class="support-box">
+            <h2>📧 Email Support</h2>
+            <p>The best way to reach us is via email. We handle all support requests personally and respond to every message.</p>
+            <div class="email">
+                <a href="mailto:mip@gmx.biz?subject=MushBloom%20Support">mip@gmx.biz</a>
+            </div>
+            <div class="response-time">
+                <strong>⏱️ Response Time:</strong> We typically respond within 24-48 hours during business days. We read and respond to every email personally.
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="quick-links">
+            <a href="help" class="quick-link-card">
+                <div class="icon">📚</div>
+                <h3>Help & Tutorials</h3>
+            </a>
+            <a href="privacy" class="quick-link-card">
+                <div class="icon">🔒</div>
+                <h3>Privacy Policy</h3>
+            </a>
+            <a href="terms" class="quick-link-card">
+                <div class="icon">📋</div>
+                <h3>Terms of Use</h3>
+            </a>
+        </div>
+
+        <!-- What to Include -->
+        <h2>✍️ How to Get the Best Support</h2>
+        <p>To help us assist you quickly and effectively, please include the following information in your email:</p>
+
+        <div class="info-box">
+            <h3>For Technical Issues:</h3>
+            <ul>
+                <li><strong>iOS Version:</strong> Go to Settings → General → About → Software Version (e.g., "iOS 18.3")</li>
+                <li><strong>Device Model:</strong> iPhone model (e.g., "iPhone 15 Pro", "iPhone 13")</li>
+                <li><strong>Description of the issue:</strong> What happened? What were you trying to do?</li>
+                <li><strong>Steps to reproduce:</strong> How can we recreate the problem?</li>
+                <li><strong>Screenshots:</strong> If applicable, attach screenshots showing the issue</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h3>For Feature Requests:</h3>
+            <ul>
+                <li>Describe the feature or improvement you'd like to see</li>
+                <li>Explain how it would help your mushroom growing workflow</li>
+                <li>If you've seen it in another app, let us know as a reference</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h3>For Cultivation Questions:</h3>
+            <ul>
+                <li>Which mushroom strain you're growing</li>
+                <li>Your substrate and growing method</li>
+                <li>Current growing stage and environmental conditions</li>
+                <li>Photos if you're concerned about contamination</li>
+            </ul>
+        </div>
+
+        <div class="tip">
+            <strong>💡 Tip:</strong> The more details you provide, the faster and more accurately we can help you. Don't worry about being too thorough — we appreciate detailed reports!
+        </div>
+
+        <!-- Common Issues -->
+        <h2>🔧 Common Questions</h2>
+        
+        <h3>iCloud Sync Not Working</h3>
+        <p>If your grows aren't syncing between devices:</p>
+        <ol>
+            <li>Check that you're signed into the same Apple ID on all devices</li>
+            <li>Go to iPhone Settings → [Your Name] → iCloud → Make sure iCloud Drive is enabled</li>
+            <li>Make sure MushBloom has permission to use iCloud (Settings → [Your Name] → iCloud → Apps Using iCloud → toggle MushBloom ON)</li>
+            <li>Ensure both devices have internet connectivity</li>
+            <li>Try force-quitting and reopening MushBloom</li>
+        </ol>
+
+        <h3>Photos Not Appearing</h3>
+        <p>If photos aren't showing in your grows:</p>
+        <ol>
+            <li>Go to iPhone Settings → Privacy & Security → Photos</li>
+            <li>Find MushBloom and make sure it's set to "All Photos" (or at minimum "Add Photos Only")</li>
+            <li>If photos still don't appear after granting permission, force-quit and reopen the app</li>
+        </ol>
+
+        <h3>Notifications/Reminders Not Working</h3>
+        <p>If you're not receiving grow reminders:</p>
+        <ol>
+            <li>Go to iPhone Settings → Notifications → MushBloom</li>
+            <li>Make sure "Allow Notifications" is enabled</li>
+            <li>Check that your preferred alert style is selected (Lock Screen, Notification Center, or Banners)</li>
+            <li>Verify that the reminder is properly scheduled in MushBloom's grow detail view</li>
+        </ol>
+
+        <h3>App Purchase Issues</h3>
+        <p>If you purchased MushBloom but it's not working or asking you to pay again:</p>
+        <ol>
+            <li>Make sure you're signed into the same Apple ID that made the purchase</li>
+            <li>Go to the App Store → tap your profile icon (top right) → verify the correct Apple ID</li>
+            <li>If the issue persists, contact us at <a href="mailto:mip@gmx.biz">mip@gmx.biz</a> with your purchase receipt</li>
+        </ol>
+
+        <!-- Privacy Note -->
+        <h2>🔒 Your Privacy</h2>
+        <p>We take your privacy seriously. When you contact support:</p>
+        <ul>
+            <li><strong>No data collection:</strong> We don't collect or store user data from the app</li>
+            <li><strong>Email only:</strong> Support communications are confidential and handled directly via email</li>
+            <li><strong>No tracking:</strong> We don't use analytics, tracking pixels, or third-party services</li>
+            <li><strong>Your grow data stays yours:</strong> All cultivation data remains on your device and your personal iCloud account</li>
+        </ul>
+        <p>Read our full <a href="privacy">Privacy Policy</a>.</p>
+
+        <!-- Business Inquiries -->
+        <h2>💼 Business & Press Inquiries</h2>
+        <p>For business partnerships, media requests, or press inquiries, please email us at <strong><a href="mailto:mip@gmx.biz">mip@gmx.biz</a></strong> with "Business Inquiry" or "Press Inquiry" in the subject line.</p>
+
+        <!-- Final CTA -->
+        <div class="tip">
+            <strong>📬 Ready to reach out?</strong> Send us an email at <a href="mailto:mip@gmx.biz?subject=MushBloom%20Support">mip@gmx.biz</a> — we're looking forward to hearing from you!
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>
+            <a href="./">Home</a> •
+            <a href="help">Help & Tutorials</a> •
+            <a href="privacy">Privacy</a> •
+            <a href="terms">Terms</a> •
+            <a href="mailto:mip@gmx.biz">Email Support</a>
+        </p>
+        <p style="margin-top: 16px;">© 2026 MushBloom. Made with 🍄 for mushroom growers everywhere.</p>
+    </div>
+</body>
+</html>
